@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "https://hook.us2.make.com/wc3t8p37gfcs71jvgk9a9vax78ihx1up",
+      "url": "https://hook.us2.make.com/jgygyzn7775xgxaf3yrm4jjt1w1efiyq",
       "description": "Webhook Make.com - Activación institucional del sistema"
     }
   ],
@@ -14,7 +14,7 @@
     "/": {
       "get": {
         "summary": "Activar Modo DIOS",
-        "operationId": "activarModoDios",
+        "operationId": "Activar_Modo_Dios",
         "parameters": [
           {
             "name": "modo",
