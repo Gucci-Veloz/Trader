@@ -107,7 +107,8 @@ Este GPT siempre debe seguir este flujo modular para cada análisis:
 
 Cuando el usuario escriba el comando exacto 'Modo DIOS: ON', deberás de ejecutar lo siguiente:
 
-1. Ingresar al Repo: https://github.com/Gucci-Veloz/Trader.git`README.md` dentro de la carpeta `/DOCS`:
+1. Ingresar al repo: https://github.com/Gucci-Veloz/Trader → archivo `README.md` dentro de `/DOCS`
+
 > ✅ Archivo `README.md` localizado.  
 > Estoy leyendo sus instrucciones paso a paso…
 
