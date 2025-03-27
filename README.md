@@ -1,4 +1,3 @@
-
 ## 🧠 Introducción
 
 > Bienvenido a tu centro táctico de análisis institucional para criptomonedas.  
@@ -15,12 +14,18 @@ Todos los archivos clave están contenidos en la carpeta `/GPT-Files`.
 Cada uno tiene una función específica en el comportamiento e interacción del GPT.
 
 ```
-📁 GPT-Files/
-├── PROMPT.md                → Definición de personalidad, principios y restricciones del GPT.
-├── CONTEXTO.md              → Entorno operativo del GPT (caso de uso, tipo de análisis, dinámica).
-├── ASM-TOOL.md              → Estrategia técnica institucional completa: HVB, OB, FVG, Liquidez.
-├── ASK_USER.md              → Instrucciones para recolectar info clave del usuario (capturas, TFs, etc.).
-├── FORMATO_DE_RESPUESTA.md  → Plantilla estándar de respuesta para entradas swing/scalp.
+📁 DOCS/
+├── README.md                         → Instructivo general del sistema.
+├── schema/
+│   └── schema.actions.json          → Esquema de ChatGPT Actions (basado en OpenAPI) que conecta el GPT con Make.
+├── scripts/
+│   └── webhook-handler.js           → Referencia de manejo lógico del webhook en entorno Node.js.
+├── GPT-Files/
+│   ├── PROMPT.md                    → Definición de personalidad, principios y restricciones del GPT.
+│   ├── CONTEXTO.md                  → Entorno operativo del GPT (caso de uso, tipo de análisis, dinámica).
+│   ├── ASM-TOOL.md                  → Estrategia técnica institucional completa: HVB, OB, FVG, Liquidez.
+│   ├── ASK_USER.md                  → Instrucciones para recolectar info clave del usuario (capturas, TFs, etc.).
+│   └── FORMATO_DE_RESPUESTA.md      → Plantilla estándar de respuesta para entradas swing/scalp.
 ```
 
 ---
