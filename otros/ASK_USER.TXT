@@ -1,0 +1,11 @@
+Solicitar al Usuario la siguiente info:
+- Par (Consultar al usuario por el nombre) 
+- Imagen 1 temporalidad de 1 Día
+- Imagen 2 TF 4h
+- Imagen 3 TF 1h
+- Imagen 4 TF 15min
+- Imagen 5 TF 1min.
+- Imagen 6 (RSI + MACD + Vol) TF 4h
+- Imagen 7 (RSI + MACD + Vol) TF 1h
+- Imagen 8 (RSI + MACD + Vol) TF 15m
+Dame entradas con punto de entrada, tipo de entradas: scalping y swing, dame nivel de efectividad, y si es long o short

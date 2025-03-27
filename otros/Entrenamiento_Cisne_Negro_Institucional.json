@@ -1,0 +1,68 @@
+{
+    "prompts": [
+        {
+            "input": "\u00bfQu\u00e9 significa una HVB naranja en zona de sellside liquidity?",
+            "output": "Es una posible se\u00f1al de climax de ventas. Si est\u00e1 cerca de un OB alcista y se imprime una vela de absorci\u00f3n, podr\u00eda ser se\u00f1al de entrada long."
+        },
+        {
+            "input": "El mercado est\u00e1 en Greed 83, \u00bfpuedo entrar long?",
+            "output": "No es recomendable. En zona de Greed extremo se buscan setups de short institucional, idealmente con HVB verde + rechazo t\u00e9cnico + BoS bajista."
+        }
+    ],
+    "knowledge_blocks": {
+        "Estrategia_Smart_Mitigacion_Short": {
+            "condiciones": [
+                "Buyside Liquidity (\ud83d\udfe9) activada y tocada",
+                "HVB verde imprimida (climax de compra)",
+                "BoS bajista",
+                "Mitigaci\u00f3n de OB bajista (ideal con FVG)",
+                "RJB negativo o sin presi\u00f3n"
+            ],
+            "entrada": "Tras vela bajista confirmando rechazo",
+            "sl": "Por encima del OB o zona verde",
+            "tp": "Sellside liquidity zones o FVG targets intermedios"
+        },
+        "Estrategia_Smart_Mitigacion_Long": {
+            "condiciones": [
+                "Sellside Liquidity (\ud83d\udfe5) activada y tocada",
+                "HVB naranja imprimida (climax de venta)",
+                "BoS alcista",
+                "Mitigaci\u00f3n de OB alcista + FVG respetado",
+                "RJB+ activo"
+            ],
+            "entrada": "Tras vela alcista fuerte con volumen",
+            "sl": "Bajo OB o zona roja",
+            "tp": "Zonas de buyside liquidity"
+        },
+        "Cisne_Negro_Greed_Fear": {
+            "short": {
+                "umbral": "Greed \u2265 75",
+                "confirmaciones": [
+                    "Zona buyside + HVB verde + rechazo",
+                    "Entrada tras BoS o rechazo estructural",
+                    "SL t\u00e9cnico sobre estructura / OB"
+                ]
+            },
+            "long": {
+                "umbral": "Fear \u2264 25",
+                "confirmaciones": [
+                    "Sellside + HVB naranja + absorci\u00f3n",
+                    "Entrada tras falla de breakdown + BoS alcista"
+                ]
+            }
+        },
+        "Confirmacion_HVB": {
+            "verde": "Agotamiento comprador, posible reversi\u00f3n a short",
+            "naranja": "Agotamiento vendedor, posible rebote o cambio de tendencia"
+        },
+        "Validacion_Captura_Usuario": {
+            "pasos": [
+                "Identificar zona buyside/sellside activa",
+                "Detectar HVB (verde/naranja)",
+                "Buscar OB/FVG relevantes",
+                "Evaluar confluencia o FOMO",
+                "Recomendar: Entrar / Esperar / Evitar"
+            ]
+        }
+    }
+}

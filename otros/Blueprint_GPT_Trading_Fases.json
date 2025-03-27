@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "version": 1
+  },
+  "blueprint": {
+    "modules": [
+      {
+        "id": 1,
+        "module": "webhook.customhook",
+        "version": 1,
+        "parameters": {
+          "name": "modo_dios_on",
+          "httpHeaders": [],
+          "payloadType": "plain"
+        },
+        "type": "trigger",
+        "name": "Inicio - Webhook"
+      },
+      {
+        "id": 2,
+        "module": "tools.textAggregator",
+        "version": 1,
+        "parameters": {
+          "text": "✅ Fase 1: Carga el archivo PROMPT.md en el GPT."
+        },
+        "name": "Mensaje - Activar PROMPT"
+      },
+      {
+        "id": 3,
+        "module": "tools.textAggregator",
+        "version": 1,
+        "parameters": {
+          "text": "✅ Fase 2: Carga el archivo CONTEXTO.md en el GPT."
+        },
+        "name": "Mensaje - Activar CONTEXTO"
+      },
+      {
+        "id": 4,
+        "module": "tools.textAggregator",
+        "version": 1,
+        "parameters": {
+          "text": "✅ Fase 3: Solicita imágenes al usuario según ASK_USER.md"
+        },
+        "name": "Mensaje - Solicitar Imágenes"
+      },
+      {
+        "id": 5,
+        "module": "tools.textAggregator",
+        "version": 1,
+        "parameters": {
+          "text": "✅ Fase 4: Validación de imágenes recibidas completada."
+        },
+        "name": "Mensaje - Validación de Imágenes"
+      },
+      {
+        "id": 6,
+        "module": "tools.textAggregator",
+        "version": 1,
+        "parameters": {
+          "text": "✅ Fase 5: Activa análisis final con FORMATO_DE_RESPUESTA.md"
+        },
+        "name": "Mensaje - Activar Análisis Final"
+      }
+    ],
+    "connections": [
+      {
+        "from": 1,
+        "to": 2
+      },
+      {
+        "from": 2,
+        "to": 3
+      },
+      {
+        "from": 3,
+        "to": 4
+      },
+      {
+        "from": 4,
+        "to": 5
+      },
+      {
+        "from": 5,
+        "to": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "version": 1
+  },
+  "modules": [
+    {
+      "id": 1,
+      "module": "webhook",
+      "name": "Custom webhook",
+      "type": "trigger",
+      "parameters": {
+        "name": "inicio_gpt"
+      }
+    },
+    {
+      "id": 2,
+      "module": "tools.textAggregator",
+      "name": "Activar PROMPT",
+      "type": "action",
+      "parameters": {
+        "text": "El GPT debe activar su PROMPT.md"
+      }
+    },
+    {
+      "id": 3,
+      "module": "flow.router",
+      "name": "Router de fases",
+      "type": "router"
+    },
+    {
+      "id": 4,
+      "module": "tools.textAggregator",
+      "name": "Activar CONTEXTO",
+      "type": "action",
+      "parameters": {
+        "text": "El GPT debe activar su CONTEXTO.md"
+      }
+    },
+    {
+      "id": 5,
+      "module": "webhook",
+      "name": "Webhook imágenes",
+      "type": "trigger",
+      "parameters": {
+        "name": "imagenes_usuario"
+      }
+    },
+    {
+      "id": 6,
+      "module": "tools.textAggregator",
+      "name": "Validar imágenes",
+      "type": "action",
+      "parameters": {
+        "text": "Confirmadas imágenes: 1D, 4H, 1H, 15m, 1m, indicadores."
+      }
+    },
+    {
+      "id": 7,
+      "module": "tools.textAggregator",
+      "name": "Activar Análisis Final",
+      "type": "action",
+      "parameters": {
+        "text": "GPT, activa la fase de análisis usando FORMATO_DE_RESPUESTA.md"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from": 1,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 3
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 6
+    },
+    {
+      "from": 6,
+      "to": 7
+    }
+  ]
+}
